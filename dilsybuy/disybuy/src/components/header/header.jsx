@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './header.css';
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -39,15 +40,17 @@ export default function Header() {
       <div className="catageory">
         <h1>Category Area</h1>
         <div className="catageoryImages">
-            <img src={imgOne} alt="catageory images" />
-            <img src={imgTwo} alt="catageory images" />
-            <img src={imgThree} alt="catageory images" />
-            <img src={imgFour} alt="catageory images" />
-            <img src={imgFive} alt="catageory images" />
-            <img src={imgSix} alt="catageory images" />
-            <img src={imgSeven} alt="catageory images" />
-            <img src={imgEight} alt="catageory images" />
+            <img src={imgOne} className='catImg' alt="catageory images" />
+            <img src={imgTwo} alt="catageory images" className='catImg' />
+            <img src={imgThree} alt="catageory images" className='catImg' />
+            <img src={imgFour} alt="catageory images" className='catImg' />
+            <img src={imgFive} alt="catageory images"className='catImg' />
+            <img src={imgSix} alt="catageory images" className='catImg' />
+            <img src={imgSeven} alt="catageory images" className='catImg' />
+            <img src={imgEight} alt="catageory images" className='catImg' />
         </div>
+       {/* HR AFTER IMAGES */}
+  <hr className="category-hr" />
 
       </div>
     </header>
