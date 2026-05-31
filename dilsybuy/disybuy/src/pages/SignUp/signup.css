@@ -2,6 +2,17 @@
 /* =========================
    PAGE LAYOUT
 ========================= */
+.signup-top-heading {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.signup-top-heading h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00a6bb;
+    margin-bottom: 10px;
+}
 
 .signup-page {
     min-height: 100vh;
