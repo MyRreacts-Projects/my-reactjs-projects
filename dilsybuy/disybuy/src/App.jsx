@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/navbar";
 import Header from "./components/header/header";
 import Products from "./pages/AllProducts/prouducts";
 import Testimonial from "./pages/testimonial/testimonial";
+import Footer from "./components/footer/footer";
 const App =()=>{
   return(
    <BrowserRouter>
@@ -13,6 +14,7 @@ const App =()=>{
 <AppRoutes/>
 <Products/>
 <Testimonial/>
+<Footer/>
 
    </BrowserRouter>
   )

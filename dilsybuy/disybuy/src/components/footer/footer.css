@@ -1,0 +1,176 @@
+
+/* =========================
+   FOOTER BASE
+========================= */
+
+.footer {
+    background: linear-gradient(135deg, #00a6bb, #007a8a);
+    color: #fff;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.footerContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footerBox {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footerBox h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footerBox h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footerBox p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footerBox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerBox ul li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footerBox ul li:hover {
+    color: #ffffff;
+    transform: translateX(6px);
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.socialIcons {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+
+.socialIcons svg {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.socialIcons svg:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    padding: 35px 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.newsletter h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.newsForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsForm input {
+    padding: 12px;
+    width: 280px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.newsForm button {
+    padding: 12px 20px;
+    border: none;
+    background: #ffffff;
+    color: #00a6bb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsForm button:hover {
+    transform: scale(1.05);
+    background: #f1f1f1;
+}
+
+/* =========================
+   BOTTOM BAR
+========================= */
+
+.footerBottom {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .newsForm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsForm input {
+        width: 100%;
+        max-width: 320px;
+    }
+}
