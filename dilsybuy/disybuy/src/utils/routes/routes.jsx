@@ -52,7 +52,7 @@ const AppRoutes = () => {
         {/* INDIVIDUAL PAGES */}
         <Route path="products" element={<Products />} />
         <Route path="testimonial" element={<Testimonial />} />
-        <Route path="cards" element={<CardItems />} />
+        <Route path="card-items" element={<CardItems />} />
         <Route path="signup" element={<SignUp />} />
 
       </Route>

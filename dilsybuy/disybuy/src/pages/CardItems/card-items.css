@@ -1,0 +1,249 @@
+/* =========================
+   MAIN SECTION
+========================= */
+
+#main-sec{
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.area-heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.area-heading::after{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: #00a6bb;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 20px;
+}
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.main-area{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   CART SECTION
+========================= */
+
+.cart-div{
+    background: #00a6bb;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.cart-div,
+.checkout-div{
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+
+    transition: 0.3s ease;
+}
+
+.cart-items:hover{
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.22);
+}
+
+.cart-items div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-items img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #fff;
+    padding: 5px;
+}
+
+.cart-items h2{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-items strong{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   CHECKOUT SECTION
+========================= */
+
+.checkout-div{
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.checkout-div ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkout-div ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+
+    font-size: 18px;
+    color: #444;
+}
+
+.checkout-div ul li:last-child{
+    font-weight: 700;
+    font-size: 22px;
+    color: #111;
+}
+
+.checkout-div ul li span{
+    font-weight: bold;
+    color: #00a6bb;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.checkout-div button{
+    width: 100%;
+    margin-top: 25px;
+
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+
+    background: #00a6bb;
+    color: white;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.checkout-div button:hover{
+    background: #008ea1;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px){
+
+    .area-heading{
+        font-size: 2.2rem;
+    }
+
+    .main-area{
+        gap: 30px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+    #main-sec{
+        padding-top: 90px;
+    }
+
+    .area-heading{
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .cart-items{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .cart-items div{
+        flex-direction: column;
+    }
+
+    .cart-items img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .checkout-div ul li{
+        font-size: 16px;
+    }
+
+    .checkout-div ul li:last-child{
+        font-size: 20px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+    .area-heading{
+        font-size: 1.8rem;
+    }
+
+    .cart-items h2{
+        font-size: 1rem;
+    }
+
+    .checkout-div button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
