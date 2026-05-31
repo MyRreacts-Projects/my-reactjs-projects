@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -20,24 +20,24 @@ const Navbar = () => {
       {/* LINKS */}
       <ul className={open ? "nav-links active" : "nav-links"}>
         <li>
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+          <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
         </li>
         <li>
-          <Link to="/products" onClick={() => setOpen(false)}>All Products</Link>
+          <NavLink to="/products" onClick={() => setOpen(false)}>All Products</NavLink>
         </li>
         <li>
-          <Link to="/card-items" onClick={() => setOpen(false)}>Card Items</Link>
+          <NavLink to="/card-items" onClick={() => setOpen(false)}>Card Items</NavLink>
         </li>
 
         {/* SIGN UP BUTTON */}
         <li>
-          <Link
+          <NavLink
             to="/sign-up"
             className="signup-btn"
             onClick={() => setOpen(false)}
           >
             Sign Up
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
@@ -45,3 +45,12 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+// import { NavLink } from "react-router-dom";
+
+// <NavLink to="/">Home</NavLink>
+// <NavLink to="/products">Products</NavLink>
+// <NavLink to="/testimonial">Testimonial</NavLink>
+// <NavLink to="/cards">Cards</NavLink>
+// <NavLink to="/signup">Signup</NavLink>
