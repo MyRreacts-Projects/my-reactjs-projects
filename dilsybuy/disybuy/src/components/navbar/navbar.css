@@ -1,0 +1,108 @@
+/* NAVBAR MAIN */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #00a6bb;
+  color: white;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  font-weight: bolder;
+}
+.logospan{
+    color:#ffcdce;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffcdce;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links li a:hover {
+  border-bottom: 3px solid #ffcdce;
+}
+
+/* SIGN UP BUTTON */
+.signup-btn {
+  background-color: #ffcdce;
+  color: #00a6bb !important;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+/* SIGN UP HOVER FIXED */
+.signup-btn:hover {
+  background: transparent;
+  color: #ffcdce !important;
+  border: 2px solid #ffcdce;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: #00a6bb;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .signup-btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
