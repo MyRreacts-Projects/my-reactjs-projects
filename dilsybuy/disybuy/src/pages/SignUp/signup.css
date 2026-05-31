@@ -1,0 +1,155 @@
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+
+.signup-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #00a6bb, #e8f7fa);
+    gap: 40px;
+}
+
+/* =========================
+   LEFT SIDE (INFO)
+========================= */
+
+.signup-left {
+    width: 40%;
+    color: white;
+}
+
+.signup-left h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.signup-left p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.benefits div {
+    background: rgba(255,255,255,0.2);
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* =========================
+   RIGHT SIDE CARD
+========================= */
+
+.signup-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.signup-card h2 {
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.signup-card p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.signup-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-card input {
+    height: 50px;
+    padding: 0 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.signup-card input:focus {
+    border-color: #00a6bb;
+    box-shadow: 0 0 10px rgba(0,166,187,0.2);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.signup-card button {
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background: #00a6bb;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-card button:hover {
+    background: #008ea1;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   LOGIN TEXT
+========================= */
+
+.login-text {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-text b {
+    color: #00a6bb;
+    cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .signup-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .signup-left,
+    .signup-right {
+        width: 100%;
+    }
+
+    .signup-left h1 {
+        font-size: 2.2rem;
+    }
+}
