@@ -1,6 +1,8 @@
 //testimonial.jsx
 import React from "react";
 import abc from '../testimonial/images/abc.jpg';
+import second from '../testimonial/images/second.jfif';
+import third from '../testimonial/images/third.jfif';
 import './testimonial.css';
 const Testimonial = ()=>{
     return(
@@ -21,7 +23,7 @@ const Testimonial = ()=>{
 
              <div className="tesimonialCard">
                <div className="img">
-                <img src={abc} alt="image" />
+                <img src={second} alt="image" />
                </div>
                <div className="rating">
                 ⭐⭐⭐⭐⭐
@@ -34,7 +36,7 @@ const Testimonial = ()=>{
 
              <div className="tesimonialCard">
                <div className="img">
-                <img src={abc} alt="image" />
+                <img src={third} alt="image" />
                </div>
                <div className="rating">
                 ⭐⭐⭐⭐⭐

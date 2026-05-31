@@ -1,6 +1,9 @@
 
 import React from "react";
 import shirt from '../AllProducts/images/shirt.jpg';
+import second from '../AllProducts/images/second.jfif';
+import third from '../AllProducts/images/third.jfif';
+import fourth from '../AllProducts/images/fourth.jfif';
 import './products.css';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
@@ -69,7 +72,7 @@ const Products = ()=>{
             <MDBIcon far icon="heart" />
         </div>
 
-        <img src={shirt} alt="shirt" />
+        <img src={second} alt="shirt" />
     </div>
 
     <div className="card-content">
@@ -117,7 +120,7 @@ const Products = ()=>{
             <MDBIcon far icon="heart" />
         </div>
 
-        <img src={shirt} alt="shirt" />
+        <img src={third} alt="shirt" />
     </div>
 
     <div className="card-content">
@@ -164,7 +167,7 @@ const Products = ()=>{
             <MDBIcon far icon="heart" />
         </div>
 
-        <img src={shirt} alt="shirt" />
+        <img src={fourth} alt="shirt" />
     </div>
 
     <div className="card-content">
